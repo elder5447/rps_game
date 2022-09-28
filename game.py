@@ -2,9 +2,10 @@ import random
 
 possible_actions = ["rock" , "scissors" , "paper"]
 
-human_turn = "rock"
+human_turn = input("enter your turn\n")
 computer_turn = random.choice(possible_actions)
 
+print(f'Human:{human_turn} vs. Computer:{computer_turn}')
 if computer_turn == human_turn:
     print("niča\n"*10)
 elif human_turn == "rock" and computer_turn == "scissors":
